@@ -11,7 +11,7 @@ Claude (Desktop / Code)
 kafka-topology-visualizer (Spring Boot jar)
         │  Kafka AdminClient
         ▼
-Kafka Cluster (localhost:9092 or remote)
+Kafka Cluster (localhost:9092 or remote) 
 ```
 
 ---
