@@ -1,0 +1,20 @@
+spring:
+  main:
+    web-application-type: none   # stdio MCP server — no HTTP listener
+  ai:
+    mcp:
+      server:
+        name: kafka-topology-visualizer
+        version: 0.1.0
+
+kafka:
+  bootstrap-servers: localhost:9092
+  security-protocol: PLAINTEXT   # PLAINTEXT | SASL_PLAINTEXT | SASL_SSL | SSL
+  sasl-mechanism: PLAIN
+  sasl-username: ""
+  sasl-password: ""
+  cache:
+    topology-ttl-seconds: 30
+    lag-ttl-seconds: 15
+  partition:
+    default-producer-throughput-mbps: 10.0   # MB/s per partition, used in suggest_partition_strategy
